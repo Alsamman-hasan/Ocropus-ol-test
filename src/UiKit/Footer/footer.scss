@@ -1,0 +1,67 @@
+@import "../../static/styles/_colors.scss";
+@import "../../static/styles/_fonts.scss";
+
+.footer-wrapper {
+  background-color: color(MainPurple);
+  width: 100%;
+
+  &__content {
+    padding: 80px 200px 37px 200px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  &__footer {
+    padding: 80px 200px 37px 200px;
+    display: flex;
+    justify-content: space-between;
+    span{
+      color: color(MainGrey);
+      @include Text3;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-wrapper {
+    &__content {
+      padding: 80px 80px 37px 80px;
+    }
+
+    &__footer {
+      padding: 80px 80px 37px 80px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-wrapper {
+    &__content {
+      padding: 40px 40px 37px 40px;
+    }
+
+    &__footer {
+      padding: 40px 40px 37px 40px;
+    }
+
+  }
+  
+}
+
+
+@media screen and (max-width:650px) {
+    .footer-wrapper {
+    &__content {
+      padding: 40px 10px 37px 10px;
+      display: flex;
+      flex-direction:column;
+    }
+    &__footer {
+      padding: 40px 10px 37px 10px;
+    }
+
+  }
+  
+}

@@ -1,0 +1,67 @@
+
+@import "../../static/styles/_colors.scss";
+@import "../../static/styles/_fonts.scss";
+
+.main-header-wrapper{
+  height: 120px;
+  position: fixed;
+  display: flex;
+  background-color: #12121200;
+  flex-direction: column;
+  // max-width: 1600px;
+  width: 100%;
+  z-index: 6;
+
+  &__contetn {
+    display: flex;
+    padding: 26px 200px 0px 200px;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+    gap: 55px;
+    align-items: center;
+  }
+
+  &__lan {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  &__btn{
+    // button {
+    //   @include BTNT1;
+    //   width: 261px;
+    //   cursor: pointer;
+    //   height: 56px;
+    //   background-color: color(MainPurple);
+    //   border:none;
+    //   color:color(MainWhite);
+    //   padding : 16px 40px;
+    //   border-radius: 80px;
+    // }
+  }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .main-header-wrapper{
+    &__contetn {
+      padding: 26px 80px 0px 80px;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 765px) {
+  .main-header-wrapper{
+    &__contetn {
+      padding: 26px 10px 0px 10px;
+    }
+  }
+  
+}

@@ -1,0 +1,112 @@
+@import "../../../../static/styles/_colors.scss";
+@import "../../../../static/styles/_fonts.scss";
+
+
+.footerRight{
+  width:50%;
+  &__container{
+    padding: 53px 0 74px 60px;
+    display: flex;
+    flex-direction:column;
+  }
+
+  &__header {
+    span{
+      @include Text2;
+      color: color(MainGrey);
+    }
+  }
+
+  &__info{
+    border-bottom: 1px solid #ffffff2c; 
+  }
+
+  &__manager {
+    margin-top: 28px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+
+    &_info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_name{
+      @include Text2;
+      color: color(MainWhite);
+    }
+
+    &_position{
+      @include Text3;
+      opacity: 0.6;
+      color: color(MainGrey);
+    }
+
+    &_img{
+      position: relative;
+    }
+
+    &_onlin {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      border-radius: 50%;
+      bottom: 4px;
+      right: 3px;
+      background-color:color(Oline);
+    }
+  }
+
+  &__btn {
+    max-width:317px;
+    margin-top: 37px;
+  }
+
+  &__contacts {
+    padding: 53px 0 23px 60px;
+    display: flex;
+    flex-direction: column;
+
+    &_header{
+      @include Ti3;
+      color: color(MainWhite);
+    }
+    &_item{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 24px;
+      span{
+        @include Text2;
+        color: color(MainWhite);
+      }
+    }
+  }
+
+  &__social {
+    padding: 23px 0 0px 60px;
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .footerRight{
+    width: 100%;
+    &__text {
+      margin-bottom: 26px;
+    }
+
+    &__container{
+      padding: 24px 0;
+    }
+
+    &__btn {
+      display:flex;
+      justify-content:center;
+    }
+
+  }
+  
+}

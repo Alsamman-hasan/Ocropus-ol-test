@@ -1,0 +1,36 @@
+@import "../../../static/styles/colors";
+@import "../../../static/styles/fonts";
+
+.purple-button-container {
+  .purple-button {
+
+    .MuiButton-root {
+      border-radius: 6.25rem;
+      min-width: auto;
+      @include BTNT1;
+      text-align: center;
+      text-transform: none;
+      color: color(MainWhite);
+      margin: 0;
+      letter-spacing: 0.02em;
+    
+      .MuiCircularProgress-root {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+
+  .MuiButton-root:disabled {
+    background: color(MainBlue);
+    color: color(MainWhite);
+    opacity: 0.8;
+  }
+  
+  .MuiButton-root:hover {
+    color: color(MainWhite);
+    background: linear-gradient(84.96deg, #450072 39.94%, #17CEE0 97.9%);
+    box-shadow: 0px 4px 8px rgba(69, 0, 114, 0.12);
+  }
+
+}

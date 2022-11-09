@@ -1,0 +1,65 @@
+
+@import "../../../../static/styles/_colors.scss";
+@import "../../../../static/styles/_fonts.scss";
+
+.footerLeft{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  border-right: 1px solid #ffffff2a;
+  padding-right: 60px;
+
+
+  &__header{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__header-title {
+    @include Ti3;
+    color: color(MainWhite)
+  }
+
+  &__header-subTitle {
+    @include Text2;
+    color: color(MainGrey)
+  }
+
+  &__forms {
+    margin-top: 56px;
+  }
+
+  &__btn {
+    margin-top: 28px;
+  }
+
+  &__text {
+    @include Text3;
+    margin-top: 32px;
+    span{
+      color:color(MainGrey);
+      opacity:0.6;
+    }
+
+    a{
+      opacity: 1;
+      color:color(MainGrey);
+      text-decoration: none;
+    }
+  }
+}
+
+
+@media screen and (max-width:650px) {
+  .footerLeft{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #ffffff2a;
+    &__text {
+      margin-bottom: 26px;
+    }
+
+  }
+  
+}

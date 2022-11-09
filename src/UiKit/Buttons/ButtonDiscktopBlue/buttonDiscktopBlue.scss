@@ -1,0 +1,33 @@
+@import "../../../static/styles/colors";
+@import "../../../static/styles/fonts";
+
+.primary-button-container {
+  .primary-button {
+
+    .MuiButton-root {
+      border-radius: 6.25rem;
+      min-width: auto;
+      @include BTNT1;
+      text-align: center;
+      text-transform: none;
+      color: color(MainWhite);
+      margin: 0;
+      letter-spacing: 0.02em;
+    
+      .MuiCircularProgress-root {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+
+  .MuiButton-root:disabled {
+    background: color(MainBlue);
+    color: color(MainWhite);
+    opacity: 0.8;
+  }
+  .MuiButton-root:hover {
+    color: color(MainPurple);
+  }
+
+}

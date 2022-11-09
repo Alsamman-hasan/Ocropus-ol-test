@@ -1,0 +1,18 @@
+$colors: (
+  // Main colors
+  MainBalck: #11001D,
+  MainDarkGrey: #6A666D,
+  MainGrey: #D9D9D9,
+  MainWhite: #FFFFFF,
+
+  MainPurple:#450072,
+  MainBlue : #17CEE0,
+  Oline:#00EB5E,
+
+  MainError: #FF4444,
+
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
